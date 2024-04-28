@@ -1,0 +1,7 @@
+
+FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD=000000
+ENV MYSQL_DATABASE=team_data1
+ENV MYSQL_USER=admin
+ENV MYSQL_PASSWORD=admin
+COPY ./mydata.sql /docker-entrypoint-initdb.d/
